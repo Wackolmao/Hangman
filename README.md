@@ -1,2 +1,1 @@
-# Hangman
-# Hangman
+# Simple Hangman Website
