@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photography Hangman Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Photography Hangman</h1>
+    <div id="gameContainer">
+        <p>Welcome, <span id="usernameDisplay"></span>!</p>
+        <p>Guess the word related to photography!</p>
+        <p id="hint"></p>
+        <div id="wordContainer"></div>
+        
+        <!-- Input field and submit button for guesses -->
+        <input type="text" id="guessInput" placeholder="Type your guess here" autofocus>
+        <button id="submitGuess" onclick="submitWordGuess()">Submit Guess</button>
+
+        <p>Wrong guesses: <span id="wrongGuesses">0</span></p>
+        <p>Your score: <span id="currentScore">0</span></p>
+        
+        <!-- Restart and Give Up buttons -->
+        <button id="restartButton" onclick="resetGame();">Restart Game</button>
+        <button id="giveUpButton" onclick="showAnswerAndIncrementCounter()">Give Up</button>
+        
+        <!-- Counters for score and give up -->
+        <p id="finalScore" style="display:none;"></p>
+        <p>Give Up Count: <span id="giveUpCount">0</span></p>
+    </div>
+
+    <!-- Background music -->
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

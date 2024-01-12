@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+    background-image: url('background.png'); /* Added background image */
+    background-size: cover; /* Cover the entire page */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-position: center; /* Center the image */
+}
+
+#gameContainer {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#wordContainer {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounded edges */
+    font-size: 16px;
+    text-align: center;
+    transition: width 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input[type="text"]:hover, input[type="text"]:focus {
+    width: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px; /* Updated rounded edges for buttons */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#restartButton {
+    margin-top: 20px;
+}
